@@ -1,0 +1,24 @@
+<h2>*ngIf</h2>
+
+<div *ngIf="true">
+  *ngIf verdadeiro
+</div>
+
+<div *ngIf="false">
+  *ngIf falso
+</div>
+
+<button (click)="mostrar()">Exibir a mensagem</button>
+
+<br>
+
+<p *ngIf="getValor()">Gol do Gabigol *ngIf</p>
+
+<p *ngIf="cursos.length == 0">Sem curso disponível</p>
+<p *ngIf="cursos.length > 0">Pelo menos um curso disponível</p>
+
+<button (click)="addCurso()">Adicionar curso</button>
+
+<p *ngIf="mostrarNome">*ngIf com uma variável</p>
+
+<p [hidden]="getValor()">Hidden</p>

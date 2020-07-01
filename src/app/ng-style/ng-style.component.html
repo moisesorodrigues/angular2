@@ -1,0 +1,19 @@
+<h2>ng-style</h2>
+
+<p [style.font-size]="30	+	'px'">Valor fixo</p>
+<p [style.font-size]="valorFonte">Valor obtido do componente para o template</p>
+
+<button (click)="incrementar()">Aumentar</button>
+
+<p [style.font-size]="validaFonte	?	'x-large'	:	'smaller'" 
+    [style.color]="validaCor ? 'red' : 'blue'">ngStyle com operador ternário</p>
+
+<button	(click)="mudaFonte()">alterar fonte</button>
+<button	(click)="mudaCor()">alterar cor</button>
+
+<p [ngStyle]="{'font-size': '30px'}">Valor fixo</p>
+
+<p [ngStyle]="{'font-size': valorFonte}">Valor obtido do componente para o template</p>
+
+<p [ngStyle]="{'font-size': validaFonte ?	'x-large'	:	'smaller', 'color': validaCor ? 'red' : 'blue'}">
+  ngStyle com operador ternário</p>
